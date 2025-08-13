@@ -1,115 +1,191 @@
-.login-page-redesign {
-    background: url('../../assets/images/bghijaudaunkanan.jpg') no-repeat center center fixed;
-    background-size: cover;
+.login-page {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 30px;
+    background-color: #e2e8f0;
+    padding: 20px;
 }
 
-.login-container-redesign {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 10px;
+.login-page .login-container {
+    display: flex;
     width: 100%;
-    max-width: 400px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.login-header-redesign {
-    text-align: center;
+/* Panel Gambar (Kiri) */
+.login-page .login-image-panel {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    color: #fff;
+}
+
+.login-page .image-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.login-page .login-image-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(10, 40, 20, 0.8), rgba(10, 40, 20, 0.2));
+    z-index: 1;
+}
+
+.login-page .image-logo-container {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login-page .image-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.login-page .login-image-panel h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.login-page .login-image-panel p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+/* Panel Form (Kanan) */
+.login-page .login-form-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-page .form-content {
+    width: 100%;
+    max-width: 320px;
+}
+
+.login-page .form-content h3 {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.login-page .form-subtitle {
+    color: #6b7280;
     margin-bottom: 30px;
 }
 
-.logo-link-login {
-    display: inline-block;
-}
-
-.logo-login-redesign {
-    width: 80px;
-    margin-bottom: 15px;
-}
-
-.welcome-text-redesign {
-    font-size: 2rem;
-    color: #1e3a8a; /* Biru tua */
-    margin-top: 0;
-}
-
-.login-form-redesign {
+.login-page .login-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.input-group-redesign {
+.login-page .input-group {
     display: flex;
     flex-direction: column;
 }
 
-.input-group-redesign label {
-    font-size: 1rem;
-    color: #374151; /* Abu-abu gelap */
-    margin-bottom: 5px;
-}
-
-.input-group-redesign input {
-    padding: 12px;
-    border: 1px solid #d1d5db; /* Abu-abu terang */
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #111827; /* Hitam */
-}
-
-.input-group-redesign input:focus {
-    outline: none;
-    border-color: #3b82f6; /* Biru */
-    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
-}
-
-.login-button-redesign {
-    padding: 12px 25px;
-    background-color: #22c55e; /* Hijau */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.login-button-redesign:hover {
-    background-color: #16a34a; /* Hijau lebih gelap */
-}
-
-.login-footer-redesign {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.register-text-redesign {
+.login-page .input-group label {
     font-size: 0.9rem;
-    color: #4b5563; /* Abu-abu sedang */
-}
-
-.register-link-redesign {
-    color: #3b82f6; /* Biru */
-    text-decoration: none;
+    color: #374151;
+    margin-bottom: 5px;
     font-weight: 500;
 }
 
-.register-link-redesign:hover {
+.login-page .input-group input {
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #111827;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-page .input-group input:focus {
+    outline: none;
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.login-page .form-options {
+    text-align: right;
+}
+
+.login-page .forgot-password {
+    font-size: 0.85rem;
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.login-page .forgot-password:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-    .login-container-redesign {
-        padding: 30px;
-    }
+.login-page .submit-btn {
+    padding: 12px 25px;
+    background-color: #22c55e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
 
-    .welcome-text-redesign {
-        font-size: 1.8rem;
+.login-page .submit-btn:hover {
+    background-color: #16a34a;
+}
+
+.login-page .register-prompt {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.login-page .register-prompt a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-page .register-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .login-page .login-container {
+        flex-direction: column;
+        height: auto;
+        max-width: 400px;
+    }
+    .login-page .login-image-panel {
+        display: none; /* Sembunyikan panel gambar di mobile agar form lebih fokus */
+    }
+    .login-page .login-form-panel {
+      padding: 30px;
     }
 }

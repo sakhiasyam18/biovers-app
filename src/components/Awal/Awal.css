@@ -1,171 +1,198 @@
-.awal-page-redesign {
+.awal-page {
     font-family: 'Poppins', sans-serif;
     color: #333;
     overflow-x: hidden;
 }
 
-.awal-header-redesign {
+/* Header Styles */
+.awal-page .awal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.logo-link {
-    text-decoration: none;
-}
-
-.logo-redesign {
-    width: 100px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.logo-redesign:hover {
-    transform: scale(1.05);
-}
-
-.awal-nav-redesign {
+.awal-page .logo-container {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
-.awal-nav-redesign a {
+.awal-page .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.awal-page .awal-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.awal-page .awal-nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.awal-page .awal-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #22c55e;
+    transition: width 0.3s;
+}
+
+.awal-page .awal-nav a:hover {
+    color: #22c55e;
+}
+
+.awal-page .awal-nav a:hover::after {
+    width: 100%;
+}
+
+.awal-page .login-btn-header {
+    padding: 10px 24px;
+    background-color: #22c55e;
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease-in-out;
+    border-radius: 6px;
+    transition: background-color 0.3s;
 }
 
-.awal-nav-redesign a:hover {
-    color: #a7f3d0; /* Warna hijau muda */
+.awal-page .login-btn-header:hover {
+    background-color: #16a34a;
 }
 
-.hero-section-redesign {
-    background-size: cover;
-    background-position: center;
+/* Hero Section Styles */
+.awal-page .hero-section {
+    position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px; /* Jarak dari header */
 }
 
-.hero-section-redesign::before {
-    content: '';
+.awal-page .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay gelap */
+    background-color: rgba(10, 30, 10, 0.6);
 }
 
-.hero-content-redesign {
+.awal-page .hero-content {
     position: relative;
     z-index: 1;
     text-align: center;
     max-width: 800px;
-}
-
-.hero-title-redesign {
-    font-size: 3.5rem;
     color: #fff;
+}
+
+.awal-page .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.biovers-text {
-    color: #a7f3d0; /* Warna hijau muda */
-}
-
-.hero-subtitle-redesign {
-    color: #eee;
-    font-size: 1.2rem;
+.awal-page .hero-subtitle {
+    font-size: 1.25rem;
     line-height: 1.7;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.login-button-redesign {
+.awal-page .hero-cta-button {
     display: inline-block;
-    padding: 15px 40px;
-    background-color: #22c55e; /* Hijau */
+    padding: 18px 45px;
+    background-color: #22c55e;
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.login-button-redesign:hover {
-    background-color: #16a34a; /* Hijau lebih gelap */
-    transform: translateY(-2px);
+.awal-page .hero-cta-button:hover {
+    background-color: #16a34a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.about-section-redesign {
-    background-color: #f9fafb; /* Abu-abu sangat muda */
-    padding: 80px 50px;
+/* About Section Styles */
+.awal-page .about-section {
+    background-color: #ffffff;
+    padding: 100px 5%;
     text-align: center;
 }
 
-.about-content-redesign {
+.awal-page .about-content {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.about-title-redesign {
-    font-size: 2.5rem;
-    color: #1e3a8a; /* Biru tua */
+.awal-page .section-title {
+    font-size: 2.8rem;
+    color: #1e3a8a;
     margin-bottom: 30px;
 }
 
-.about-text-redesign {
-    color: #4b5563; /* Abu-abu sedang */
+.awal-page .section-text {
+    color: #4b5563;
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
-.awal-footer-redesign {
-    background-color: #1e293b; /* Abu-abu gelap */
-    color: #f3f4f6; /* Abu-abu sangat muda */
+/* Footer Styles */
+.awal-page .awal-footer {
+    background-color: #1e293b;
+    color: #cbd5e1;
     text-align: center;
     padding: 25px;
     font-size: 0.9rem;
 }
 
+/* Responsive for Mobile */
 @media (max-width: 768px) {
-    .awal-header-redesign {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 15px;
+    .awal-page .awal-nav, .awal-page .login-btn-header {
+        display: none;
     }
-
-    .awal-nav-redesign {
-        gap: 15px;
-    }
-
-    .hero-title-redesign {
+    .awal-page .hero-title {
         font-size: 2.5rem;
     }
-
-    .hero-subtitle-redesign {
+    .awal-page .hero-subtitle {
         font-size: 1rem;
     }
-
-    .about-title-redesign {
+    .awal-page .section-title {
         font-size: 2rem;
-    }
-
-    .about-text-redesign {
-        font-size: 1rem;
     }
 }

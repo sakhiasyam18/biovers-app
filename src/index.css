@@ -1,24 +1,14 @@
 /* src/index.css */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-@font-face {
-  font-family: 'MaterialIcons';
-  src: url('./assets/fonts/MaterialIcons-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'CupertinoIcons';
-  src: url('./assets/fonts/CupertinoIcons.ttf') format('truetype');
-}
-
-body {
+/* body {
   margin: 0;
-  padding: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background-color: #f8fafc; /* Warna latar dasar yang netral */
+/* }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
+} */ 
