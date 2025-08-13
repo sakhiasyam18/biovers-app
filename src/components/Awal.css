@@ -1,0 +1,290 @@
+/* Ambil semua style dari file awal.html dan paste di sini */
+/* Pastikan path ke gambar latar sudah benar */
+.awal-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-image: url("../../assets/images/bghijaudaunkanan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-image: url("bghijaudaunkanan.jpg");
+  /* Background hutan tropis */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo styles */
+.logo img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1c40f;
+  /* Warna kuning cerah saat hover */
+  transform: translateY(-2px);
+  display: inline-block;
+}
+
+/* Hero section styles */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  animation: slideIn 1s ease-out;
+}
+
+.hero h1 span {
+  color: #f1c40f;
+  /* Warna kuning untuk "BIOVERS" */
+}
+
+/* Login button styles */
+.login-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  /* Gradient hijau */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 1.2s ease-out;
+}
+
+.login-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+}
+
+/* About section styles */
+.about {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px 50px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .login-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .login-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .about {
+    padding: 30px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
+/* ... Lanjutkan salin sisa CSS dari awal.html ... */

@@ -1,0 +1,153 @@
+/* Ambil semua style dari login2.html */
+/* Pastikan path ke gambar latar sudah benar */
+.login-page {
+  font-family: Arial, sans-serif;
+  background: url("../../assets/images/bghijaudaunkanan.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.login-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+  width: 400px;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles with background image */
+body {
+  font-family: Arial, sans-serif;
+  background: url("bghijaudaunkanan.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Login container styles */
+.login-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+  width: 400px;
+}
+
+/* Logo styles */
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Welcome heading styles */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Input group styles */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* Icon styles for input fields */
+.input-group .icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Input field styles */
+.input-group input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Register link styles */
+.register {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.register a {
+  color: #00f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Login button styles */
+.login-button {
+  padding: 12px 30px;
+  background-color: #00f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Login button hover effect */
+.login-button:hover {
+  background-color: #0000cc;
+}
+
+/* Responsive adjustments for desktop */
+@media (max-width: 1200px) {
+  .login-container {
+    width: 350px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .login-container {
+    width: 500px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+/* ... Lanjutkan salin sisa CSS dari login2.html ... */
