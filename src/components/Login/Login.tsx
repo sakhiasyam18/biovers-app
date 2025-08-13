@@ -5,26 +5,49 @@ import logo from "../../assets/images/logo2.png";
 
 const Login: React.FC = () => {
   return (
-    <div className="login-page">
-      <div className="login-container">
-        <Link to="/">
-          <img src={logo} alt="BIOVERS Logo" className="logo" />
-        </Link>
-        <h1>SELAMAT DATANG</h1>
-        <form>
-          <div className="input-group">
-            <input type="email" placeholder="Email" required />
-          </div>
-          <div className="input-group">
-            <input type="password" placeholder="Password" required />
-          </div>
-          <div className="register">
-            <a href="#register">Belum Punya Akun? Daftar</a>
-          </div>
-          <Link to="/menu" className="login-button">
-            MASUK
+    <div className="login-page-redesign">
+      <div className="login-container-redesign">
+        <div className="login-header-redesign">
+          <Link to="/" className="logo-link-login">
+            <img
+              src={logo}
+              alt="BIOVERS Logo"
+              className="logo-login-redesign"
+            />
           </Link>
+          <h2 className="welcome-text-redesign">Selamat Datang Kembali</h2>
+        </div>
+        <form className="login-form-redesign">
+          <div className="input-group-redesign">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan email Anda"
+              required
+            />
+          </div>
+          <div className="input-group-redesign">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Masukkan password Anda"
+              required
+            />
+          </div>
+          <button type="submit" className="login-button-redesign">
+            MASUK
+          </button>
         </form>
+        <div className="login-footer-redesign">
+          <p className="register-text-redesign">
+            Belum punya akun?{" "}
+            <Link to="#" className="register-link-redesign">
+              Daftar di sini
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

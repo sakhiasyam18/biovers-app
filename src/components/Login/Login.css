@@ -1,153 +1,115 @@
-/* Ambil semua style dari login2.html */
-/* Pastikan path ke gambar latar sudah benar */
-.login-page {
-  font-family: Arial, sans-serif;
-  background: url("../../assets/images/bghijaudaunkanan.jpg") no-repeat center
-    center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
-}
-
-.login-container {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 15px;
-  width: 400px;
-}
-
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles with background image */
-body {
-  font-family: Arial, sans-serif;
-  background: url("bghijaudaunkanan.jpg") no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
-}
-
-/* Login container styles */
-.login-container {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 15px;
-  width: 400px;
-}
-
-/* Logo styles */
-.logo {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-/* Welcome heading styles */
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* Input group styles */
-.input-group {
-  display: flex;
-  align-items: center;
-  margin: 15px 0;
-}
-
-/* Icon styles for input fields */
-.input-group .icon {
-  width: 20px;
-  margin-right: 10px;
-}
-
-/* Input field styles */
-.input-group input {
-  padding: 12px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  background-color: #fff;
-  color: #333;
-}
-
-/* Register link styles */
-.register {
-  margin: 15px 0;
-  font-size: 14px;
-}
-
-.register a {
-  color: #00f;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-/* Login button styles */
-.login-button {
-  padding: 12px 30px;
-  background-color: #00f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Login button hover effect */
-.login-button:hover {
-  background-color: #0000cc;
-}
-
-/* Responsive adjustments for desktop */
-@media (max-width: 1200px) {
-  .login-container {
-    width: 350px;
+.login-page-redesign {
+    background: url('../../assets/images/bghijaudaunkanan.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 30px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
 }
 
-@media (max-width: 992px) {
-  .login-container {
-    width: 500px;
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
-  .input-group input {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .login-button {
-    padding: 10px 25px;
-    font-size: 14px;
-  }
+.login-container-redesign {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ... Lanjutkan salin sisa CSS dari login2.html ... */
+.login-header-redesign {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-link-login {
+    display: inline-block;
+}
+
+.logo-login-redesign {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.welcome-text-redesign {
+    font-size: 2rem;
+    color: #1e3a8a; /* Biru tua */
+    margin-top: 0;
+}
+
+.login-form-redesign {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group-redesign {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group-redesign label {
+    font-size: 1rem;
+    color: #374151; /* Abu-abu gelap */
+    margin-bottom: 5px;
+}
+
+.input-group-redesign input {
+    padding: 12px;
+    border: 1px solid #d1d5db; /* Abu-abu terang */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #111827; /* Hitam */
+}
+
+.input-group-redesign input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Biru */
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+.login-button-redesign {
+    padding: 12px 25px;
+    background-color: #22c55e; /* Hijau */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button-redesign:hover {
+    background-color: #16a34a; /* Hijau lebih gelap */
+}
+
+.login-footer-redesign {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.register-text-redesign {
+    font-size: 0.9rem;
+    color: #4b5563; /* Abu-abu sedang */
+}
+
+.register-link-redesign {
+    color: #3b82f6; /* Biru */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link-redesign:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-container-redesign {
+        padding: 30px;
+    }
+
+    .welcome-text-redesign {
+        font-size: 1.8rem;
+    }
+}

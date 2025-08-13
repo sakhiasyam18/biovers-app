@@ -1,7 +1,7 @@
 /* General Body Styles */
 body {
   font-family: Arial, sans-serif;
-  background-image: url("bghijaudaunkanan.jpg");
+  background-image: url('../../assets/images/bghijaudaunkanan.jpg');
   /* Background image from your other files */
   background-size: cover;
   background-position: center;

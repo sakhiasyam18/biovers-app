@@ -1,15 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Tambahkan Link untuk navigasi
 import "./Menganalisis.css";
 
 const Menganalisis: React.FC = () => {
   const goBack = () => window.history.back();
+
   return (
+    // 1. Tambahkan wrapper div dengan className unik
     <div className="menganalisis-page">
       <div className="mobile-container">
         <header>
           <i className="fas fa-arrow-left icon" onClick={goBack}></i>
           <h1>Mengevaluasi</h1>
           <div className="header-icons">
+            {/* Ganti <i> dengan Link jika perlu */}
             <i className="fas fa-user-circle icon"></i>
             <i className="fas fa-sign-out-alt icon"></i>
           </div>

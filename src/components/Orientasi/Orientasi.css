@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("bghijaudaunkanan.jpg"); /* Menggunakan background dari file lain */
+  background-image: url('../../assets/images/bghijaudaunkanan.jpg'); /* Menggunakan background dari file lain */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
