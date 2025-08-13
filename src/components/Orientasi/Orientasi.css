@@ -1,0 +1,165 @@
+/* Reset dan Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("bghijaudaunkanan.jpg"); /* Menggunakan background dari file lain */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container utama yang menyerupai tampilan mobile */
+.mobile-container {
+  width: 100%;
+  max-width: 420px; /* Lebar umum untuk tampilan mobile */
+  height: 100vh;
+  max-height: 800px;
+  background-color: #0c3a1e; /* Warna dasar hijau tua yang cocok dengan tema */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-shrink: 0; /* Header tidak menyusut */
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+header .icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+header .icon:hover {
+  transform: scale(1.1);
+}
+
+.header-icons {
+  display: flex;
+  gap: 18px; /* Jarak antara ikon */
+}
+
+/* Konten Utama */
+main {
+  padding: 0 20px 20px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instruction-box {
+  background-color: #2f613c; /* Warna hijau dari gambar */
+  color: #e2eab9; /* Warna teks kekuningan dari gambar */
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.instruction-box ul {
+  list-style-position: inside;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Jarak antar poin */
+}
+
+.journal-button {
+  background-color: #3b5a7a; /* Warna biru keabuan dari gambar */
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.journal-button:hover {
+  background-color: #4a6e8a;
+  transform: scale(1.03);
+}
+
+.data-card {
+  background-color: white;
+  color: #a0a0a0; /* Warna teks abu-abu */
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1; /* Membuat kartu ini mengisi ruang yang tersisa */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Footer untuk input teks */
+footer {
+  padding: 15px 20px;
+  background-color: #0c3a1e; /* Warna sama dengan background utama */
+  flex-shrink: 0; /* Footer tidak menyusut */
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px 15px;
+}
+
+.input-area input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: transparent;
+}
+
+.input-area input::placeholder {
+  color: #aaa;
+}
+
+.input-area .icon {
+  font-size: 20px;
+  color: #007bff; /* Warna biru untuk ikon kirim */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.input-area .icon:hover {
+  transform: scale(1.1);
+}
